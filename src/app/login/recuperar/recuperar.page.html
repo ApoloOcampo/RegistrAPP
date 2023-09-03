@@ -1,13 +1,80 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>recuperar</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">recuperar</ion-title>
+      <ion-title size="large"></ion-title>
     </ion-toolbar>
   </ion-header>
+
+<!-- HEADER LOGO DUOC -->
+<div class="container start">
+  <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1067px-Logo_DuocUC.svg.png" style="height: 5vh; max-width: 250vh;">
+  </ion-img>
+</div>
+
+<!-- INICIO DEL CARD -->
+<ion-card style="height: 70vh; max-width: auto;">
+
+<!-- TEXTO CABECILLA -->    
+  <ion-col>
+    <ion-row class="ion-justify-content-center">
+      <h4>
+        RESTABLECER CONTRASEÑA
+      </h4>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <p>
+        Ingrese su nombre de usuario.
+      </p>
+    </ion-row>
+  </ion-col>
+
+<!-- INPUT USUARIO -->
+  <ion-col>
+    <ion-row class="ion-justify-content-center">
+      <div class="container">
+        <ion-list>
+          <ion-item>
+            <ion-input labelPlacement="floating" value="" style="height: auto; width: 40vh;">
+              <div slot="label">Usuario <ion-text color="dark"></ion-text></div>
+            </ion-input>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-row>
+  </ion-col>
+
+<!-- BOTÓN INGRESAR -->    
+  <ion-col>
+    <ion-row class="ion-justify-content-center">
+      <div class="container">
+        <ion-button id="present-alert" [routerLink]="['/login']">RECUPERAR</ion-button>
+        <ion-alert
+          trigger="present-alert"
+          header="ENVIADO"
+          subHeader="correo: *****@duocuc.cl"
+          message="En breve recibirá un mensaje a su correo con su nueva contraseña"
+          [buttons]="alertButtons">
+        </ion-alert>
+      </div>
+    </ion-row>
+  </ion-col>
+
+<!-- BOTÓN REGRESAR -->  
+  <ion-col>
+    <ion-row class="ion-justify-content-center">
+      <div class="container">
+        <ion-toolbar>
+          <ion-buttons slot="start" [routerLink]="['/login']">
+            <ion-back-button default-href="#" ></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </div>
+    </ion-row>
+  </ion-col>
+
+
+<!-- TERMINO DEL CARD -->
+</ion-card>
+
+<!-- FIN DEL CONTENIDO -->
 </ion-content>

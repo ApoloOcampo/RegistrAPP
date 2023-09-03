@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecuperarPage implements OnInit {
 
+  public alertButtons = ['OK'];
+  
   constructor() { }
 
   ngOnInit() {
