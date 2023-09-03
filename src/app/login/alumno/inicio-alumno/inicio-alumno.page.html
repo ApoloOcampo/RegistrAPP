@@ -1,0 +1,64 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Alumno DuocUC</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<!-- FOTO DE PERFIL -->
+  <ion-col>
+    <div class="container">
+      <ion-item>
+        <ion-avatar slot="start">
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Alan Brito</ion-label>
+      </ion-item>
+    </div>
+  </ion-col>
+
+<!-- LISTA DE ASIGNATURAS CON BOTONES QR -->
+  <ion-list>
+    <ion-list-header>
+<!-- ASIGNATURA 1 -->
+      <ion-label>PROGR. DE APP MOVILES</ion-label>
+    </ion-list-header>
+<!-- SECCIÓN 1 -->
+    <ion-item>
+      <ion-label>Sección PGY4121-10V</ion-label>
+      <ion-button fill="solid" [routerLink]="['/login/alumno/inicio-alumno/marcar-asistencia']" style="height: 5vh; width: 15vh;" >
+        ESCANEAR QR
+      </ion-button>
+    </ion-item>
+  </ion-list>
+<!-- ASIGNATURA 2 -->  
+  <ion-list>
+    <ion-list-header lines="inset">
+      <ion-label>PROCESO PORTAFOLIO</ion-label>
+    </ion-list-header>
+<!-- SECCIÓN 1 -->
+  <ion-item>
+    <ion-label>Sección APY4461-004V</ion-label>
+    <ion-button fill="solid" [routerLink]="['/login/alumno/inicio-alumno/marcar-asistencia']" style="height: 5vh; width: 15vh;" >
+      Generar QR
+    </ion-button>
+  </ion-item>
+
+  </ion-list>
+
+
+<!-- BOTÓN CERRAR SESIÓN -->
+  <ion-col>
+    <ion-row class="ion-justify-content-center">
+      <div class="container">
+        <ion-toolbar>
+          <ion-buttons slot="secondary">
+            <ion-button size="large" [routerLink]="['/login']"> Cerrar Sesión </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </div>
+    </ion-row>
+  </ion-col>
+
+<!-- FIN DEL CONTENIDO -->
+</ion-content>

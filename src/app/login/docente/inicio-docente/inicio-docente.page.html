@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Docentes DuocUC</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<!-- BOTÓN MENÚ -->
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Pagina Inicio</ion-title>
+  </ion-toolbar>
+
+<!-- FOTO DE PERFIL -->
+  <ion-col>
+    <div class="container">
+      <ion-item>
+        <ion-avatar slot="start">
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label> Profesor Alan Brito</ion-label>
+      </ion-item>
+    </div>
+  </ion-col>
+
+<!-- LISTA DE ASIGNATURAS CON BOTONES QR -->
+  <ion-list>
+    <ion-list-header>
+<!-- ASIGNATURA 1 -->
+      <ion-label>PROGR. DE APP MOVILES</ion-label>
+    </ion-list-header>
+<!-- SECCIÓN 1 -->
+    <ion-item>
+      <ion-label>Sección PGY4121-10V</ion-label>
+      <ion-button fill="solid" [routerLink]="['/login/docente/inicio-docente/iniciar-clase']" style="height: 5vh; width: 15vh;" >
+        Generar QR
+      </ion-button>
+    </ion-item>
+<!-- SECCIÓN 2 -->
+    <ion-item>
+      <ion-label>Sección PGY4121-100V</ion-label>
+      <ion-button fill="solid" [routerLink]="['/login/docente/inicio-docente/iniciar-clase']" style="height: 5vh; width: 15vh;" >
+        Generar QR
+      </ion-button>
+    </ion-item>
+  </ion-list>
+<!-- ASIGNATURA 2 -->  
+  <ion-list>
+    <ion-list-header lines="inset">
+      <ion-label>PROCESO PORTAFOLIO</ion-label>
+    </ion-list-header>
+<!-- SECCIÓN 1 -->
+    <ion-item>
+      <ion-label>Sección APY4461-004V</ion-label>
+      <ion-button fill="solid" [routerLink]="['/login/docente/inicio-docente/iniciar-clase']" style="height: 5vh; width: 15vh;" >
+        Generar QR
+      </ion-button>
+    </ion-item>
+<!-- SECCIÓN 2 -->
+    <ion-item>
+      <ion-label>Sección APY4461-10V</ion-label>
+      <ion-button fill="solid" [routerLink]="['/login/docente/inicio-docente/iniciar-clase']" style="height: 5vh; width: 15vh;" >
+        Generar QR      
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+<!-- BOTÓN CERRAR SESIÓN -->
+  <ion-col>
+    <ion-row class="ion-justify-content-center">
+      <div class="container">
+        <ion-toolbar>
+          <ion-buttons slot="secondary">
+            <ion-button size="large" [routerLink]="['/login']"> Cerrar Sesión </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </div>
+    </ion-row>
+  </ion-col>
+
+<!-- FIN DEL CONTENIDO -->
+</ion-content>

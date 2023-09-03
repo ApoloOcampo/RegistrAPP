@@ -1,0 +1,52 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">INICIO CLASE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<!-- BOTON GENERAR QR -->
+  <ion-col>
+    <ion-row class="ion-justify-content-center">
+        <div class="container">
+          <ion-img src="https://i.postimg.cc/28TGMHD7/qr.jpg">
+          </ion-img>
+        </div>
+    </ion-row>
+  </ion-col>
+
+<!-- DATOS DE LA CLASE -->
+  <ion-list>
+    <ion-list-header>
+<!-- ASIGNATURA -->
+      <ion-label>PROGRAMACIÓN DE APP MOVILES</ion-label>
+    </ion-list-header>
+<!-- DATO 1 -->
+    <ion-item>
+      <ion-label>Sección PGY4121-10V</ion-label>
+    </ion-item>
+<!-- DATO 2 -->
+    <ion-item>
+      <ion-label>Horario 20:31 - 22:30 HRS</ion-label>
+    </ion-item>
+<!-- DATO 3 -->
+    <ion-item>
+      <ion-label>Sala L10</ion-label>
+    </ion-item>
+  </ion-list>
+
+<!-- BOTÓN TERMINAR CLASE -->
+<ion-col>
+  <ion-row class="ion-justify-content-center">
+    <div class="container">
+      <ion-toolbar>
+        <ion-buttons slot="secondary">
+          <ion-button size="large" [routerLink]="['/login/docente/inicio-docente']"> Finalizar clase </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </div>
+  </ion-row>
+</ion-col>
+
+<!-- FIN DEL CONTENIDO -->
+</ion-content>

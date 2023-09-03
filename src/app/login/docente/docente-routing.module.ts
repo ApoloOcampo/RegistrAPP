@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: DocentePage
+  },
+  {
+    path: 'inicio-docente',
+    loadChildren: () => import('./inicio-docente/inicio-docente.module').then( m => m.InicioDocentePageModule)
   }
 ];
 
