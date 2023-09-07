@@ -47,12 +47,12 @@
   <ion-col>
     <ion-row class="ion-justify-content-center">
       <div class="container">
-        <ion-button id="present-alert" [routerLink]="['/login']">RECUPERAR</ion-button>
+        <ion-button id="present-alert" [routerLink]="['/login/recuperar/reestablecer']">RECUPERAR</ion-button>
         <ion-alert
           trigger="present-alert"
           header="ENVIADO"
           subHeader="correo: *****@duocuc.cl"
-          message="En breve recibirá un mensaje a su correo con su nueva contraseña"
+          message="En breve recibirá un mensaje a su correo con su código para reestablecer su contraseña"
           [buttons]="alertButtons">
         </ion-alert>
       </div>

@@ -7,7 +7,15 @@ const routes: Routes = [
   {
     path: '',
     component: RecuperarPage
+  },  {
+    path: 'reestablecer',
+    loadChildren: () => import('./reestablecer/reestablecer.module').then( m => m.ReestablecerPageModule)
+  },
+  {
+    path: 'reestablecimiento-exitoso',
+    loadChildren: () => import('./reestablecimiento-exitoso/reestablecimiento-exitoso.module').then( m => m.ReestablecimientoExitosoPageModule)
   }
+
 ];
 
 @NgModule({

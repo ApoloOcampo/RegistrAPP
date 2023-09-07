@@ -1,0 +1,62 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<!-- HEADER LOGO DUOC -->
+  <div class="container start">
+    <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1067px-Logo_DuocUC.svg.png" style="height: 10vh; max-width: 250vh;">
+    </ion-img>
+  </div>
+
+
+<!-- INICIO DEL CARD -->
+  <ion-card style="height: 70vh; max-width: auto;">
+
+<!-- TEXTO CABECILLA -->    
+<ion-col>
+  <ion-row class="ion-justify-content-center">
+    <h2>
+      <strong>
+        Validación de código
+      </strong>
+    </h2>
+  </ion-row>
+  <ion-row class="ion-justify-content-center">
+    <p>
+      Por favor ingrese el código recibido.
+    </p>
+  </ion-row>
+</ion-col>
+
+
+
+<!-- INPUT DE CÓDIGO-->
+
+<ion-input label="Ingrese código de verificación" label-placement="floating" fill="outline" placeholder="Código de verificación"> 
+</ion-input>
+
+<!-- BOTÓN INGRESAR -->    
+<ion-col>
+  <ion-row class="ion-justify-content-center">
+    <div class="container">
+      <ion-toolbar>
+          <ion-button fill="solid" [routerLink]="['/login/recuperar/reestablecimiento-exitoso']" style="height: 10vh; width: 30vh;" >
+            REESTABLECER
+          </ion-button>
+      </ion-toolbar>
+    </div>
+  </ion-row>
+</ion-col>
+
+
+  </ion-card>
+<!-- IMAGEN ACREDITACIÓN DUOC UC -->
+<div class="container end">
+  <ion-img src="https://www.duoc.cl/wp-content/themes/wordpress-duoc-cl/images/acreditacion.png" style="height: 5vh; max-width: auto; background-color: rgba(254, 174, 0, 0.787);">
+  </ion-img>
+</div>
+</ion-content>
+
