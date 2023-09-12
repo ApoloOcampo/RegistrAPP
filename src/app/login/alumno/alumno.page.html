@@ -36,7 +36,7 @@
         <div class="container">
           <ion-list>
             <ion-item>
-              <ion-input labelPlacement="floating" value="" style="height: auto; width: 40vh;">
+              <ion-input labelPlacement="stacked" [clearOnEdit]="true" value="" [(ngModel)]="user" style="height: auto; width: 40vh;">
                 <div slot="label">Usuario <ion-text color="dark"></ion-text></div>
               </ion-input>
             </ion-item>
@@ -51,7 +51,7 @@
         <div class="container">
           <ion-list>
             <ion-item>
-              <ion-input labelPlacement="floating" type="password" value="" style="height: auto; width: 40vh;">
+              <ion-input labelPlacement="stacked" [clearOnEdit]="true" type="password" value="" [(ngModel)]="pass" style="height: auto; width: 40vh;">
                 <div slot="label">Password <ion-text color="dark"></ion-text></div>
               </ion-input>
             </ion-item>
@@ -65,7 +65,7 @@
       <ion-row class="ion-justify-content-center">
         <div class="container">
           <ion-toolbar>
-              <ion-button fill="solid" [routerLink]="['/login/alumno/inicio-alumno']" style="height: 10vh; width: 30vh;" >
+              <ion-button fill="solid" (click)="validarAlumno()" style="height: 10vh; width: 30vh;" >
                 INGRESAR
               </ion-button>
           </ion-toolbar>
